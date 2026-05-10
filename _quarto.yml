@@ -1,22 +1,30 @@
 project:
   type: website
+  output-dir: _site
 
 website:
   title: "Blind Student Aid AI"
-  description: "Bridging the accessibility gap for competitive exam aspirants."
+  description: "Converting handwritten notes to audio using Vision AI and Gemini Pro."
+  site-url: "https://rohanranshinge.github.io/blind-student-aid-ai/"
   repo-url: "https://github.com/RohanRanshinge/blind-student-aid-ai"
+  
+  # This section ensures the top bar is consistent on every page
   navbar:
     background: primary
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - href: motivation.qmd
-        text: The "Why"
-      - href: BlindStudentAid.ipynb
-        text: The Solution (Notebook)
+      - text: "Home"
+        href: index.qmd
+      - text: "The Why"
+        href: motivation.qmd
+      - text: "The Solution (Notebook)"
+        href: BlindStudentAid.ipynb
     right:
       - icon: github
         href: "https://github.com/RohanRanshinge/blind-student-aid-ai"
+
+  # Disabling the sidebar makes the top navbar the primary way to move around
+  sidebar: false
 
 format:
   html:
@@ -24,8 +32,11 @@ format:
       light: cosmo
       dark: darkly
     toc: true
+    toc-depth: 3
     code-fold: show
     code-tools: true
+    number-sections: true
 
+# This prevents the notebook from trying to run on GitHub (which would fail)
 execute:
   enabled: false
