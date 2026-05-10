@@ -1,3 +1,7 @@
+---
+title: "Project Overview"
+---
+
 # 📝 Empowering Blind Students: Handwritten Note to Audio Converter
 
 An AI-powered pipeline designed to bridge the accessibility gap for visually impaired students by transforming handwritten study materials into structured, consistent, and high-quality audio podcasts.
