@@ -3,20 +3,26 @@ project:
 
 website:
   title: "Blind Student Aid AI"
+  description: "Bridging the accessibility gap for competitive exam aspirants."
+  repo-url: "https://github.com/RohanRanshinge/blind-student-aid-ai"
   navbar:
     background: primary
     left:
       - href: index.qmd
         text: Home
+      - href: motivation.qmd
+        text: The "Why"
       - href: BlindStudentAid.ipynb
-        text: Project Notebook
+        text: The Solution (Notebook)
     right:
       - icon: github
-        href: https://github.com/RohanRanshinge/blind-student-aid-ai
+        href: "https://github.com/RohanRanshinge/blind-student-aid-ai"
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: cosmo
+      dark: darkly
     toc: true
     code-fold: show
     code-tools: true
