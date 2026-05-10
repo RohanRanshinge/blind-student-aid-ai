@@ -1,0 +1,16 @@
+project:
+  type: website
+
+website:
+  title: "Empowering Blind Students"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: BlindStudentAid.ipynb
+        text: Notebook
+
+format:
+  html:
+    theme: cosmo
+    toc: true
