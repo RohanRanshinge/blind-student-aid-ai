@@ -1,0 +1,26 @@
+---
+title: "The Mission"
+subtitle: "Empowering Aspirants Through Accessible Technology"
+---
+
+## The Inspiration: UPSC and Beyond
+
+The Union Public Service Commission (UPSC) examination is one of the most rigorous academic pursuits in the world. For many, the journey involves thousands of pages of handwritten notes, quick sketches, and complex diagrams.
+
+For **visually impaired students**, this journey faces a unique bottleneck: **accessibility**. While printed books are often available in digital or braille formats, the invaluable, personalized "handwritten notes" shared in study groups or created in classrooms remain locked away in a visual format.
+
+## The Problem
+
+1.  **OCR Limitations:** Standard OCR tools often struggle with the cursive or stylized nature of fast-paced handwriting.
+2.  **Contextual Errors:** Even when text is recognized, the "noise" of incorrect grammar or missing punctuation makes Text-to-Speech (TTS) output confusing and robotic.
+3.  **Navigation:** Listening to a single 2-hour audio file of a textbook is inefficient for targeted revision.
+
+## The Solution
+
+This project was built to transform that workflow into a seamless experience:
+
+* **Vision AI:** Captures high-resolution detail from handwritten pages.
+* **Gemini Pro:** Acts as a "bridge" to correct OCR hallucinations and structure the text into logical Markdown.
+* **Segmented Audio:** Instead of one long file, it generates manageable chapters using high-quality **Chirp3-HD** voices, making it feel like a professional audiobook.
+
+> "The goal isn't just to read text, but to provide a tool that respects the effort a student puts into their notes by making them accessible anywhere, anytime."
