@@ -2,6 +2,15 @@
 title: "Project Overview"
 ---
 
+Welcome to the **Blind Student Aid AI** project. This tool leverages Google Cloud's Vision AI and Gemini Pro to convert handwritten educational materials into structured, natural-sounding audio.
+
+### Quick Links
+* [**Read the Story**](motivation.qmd): Learn about the UPSC motivation behind this project.
+* [**Explore the Code**](BlindStudentAid.ipynb): See the end-to-end Python implementation.
+* [**GitHub Repo**](https://github.com/RohanRanshinge/blind-student-aid-ai): View the source and contribute.
+
+---
+
 # 📝 Empowering Blind Students: Handwritten Note to Audio Converter
 
 An AI-powered pipeline designed to bridge the accessibility gap for visually impaired students by transforming handwritten study materials into structured, consistent, and high-quality audio podcasts.
