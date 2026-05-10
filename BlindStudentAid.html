@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./motivation.html"> 
-<span class="menu-text">The “Why”</span></a>
+<span class="menu-text">The Why</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./BlindStudentAid.html" aria-current="page"> 
@@ -328,11 +328,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#empowering-blind-students-handwritten-note-to-audio-converter" id="toc-empowering-blind-students-handwritten-note-to-audio-converter" class="nav-link active" data-scroll-target="#empowering-blind-students-handwritten-note-to-audio-converter">📝 Empowering Blind Students: Handwritten Note to Audio Converter</a>
+  <li><a href="#empowering-blind-students-handwritten-note-to-audio-converter" id="toc-empowering-blind-students-handwritten-note-to-audio-converter" class="nav-link active" data-scroll-target="#empowering-blind-students-handwritten-note-to-audio-converter"><span class="header-section-number">1</span> 📝 Empowering Blind Students: Handwritten Note to Audio Converter</a>
   <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#how-to-use" id="toc-how-to-use" class="nav-link" data-scroll-target="#how-to-use">How to Use</a></li>
-  <li><a href="#workflow-steps" id="toc-workflow-steps" class="nav-link" data-scroll-target="#workflow-steps">Workflow Steps</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">1.1</span> Introduction</a></li>
+  <li><a href="#how-to-use" id="toc-how-to-use" class="nav-link" data-scroll-target="#how-to-use"><span class="header-section-number">1.2</span> How to Use</a></li>
+  <li><a href="#workflow-steps" id="toc-workflow-steps" class="nav-link" data-scroll-target="#workflow-steps"><span class="header-section-number">1.3</span> Workflow Steps</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -345,15 +345,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p><a href="https://colab.research.google.com/github/RohanRanshinge/blind-student-aid-ai/blob/main/BlindStudentAid.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
-<section id="empowering-blind-students-handwritten-note-to-audio-converter" class="level1">
-<h1>📝 Empowering Blind Students: Handwritten Note to Audio Converter</h1>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<section id="empowering-blind-students-handwritten-note-to-audio-converter" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 📝 Empowering Blind Students: Handwritten Note to Audio Converter</h1>
+<section id="introduction" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1.1</span> Introduction</h2>
 <p>This Colab notebook provides an AI-powered solution to convert handwritten notes into accessible audio formats. Designed primarily for blind students, it leverages Google Cloud’s Vision AI for Optical Character Recognition (OCR), Google’s Gemini Pro for intelligent text correction and formatting, and Google Cloud’s Text-to-Speech (TTS) for natural-sounding audio synthesis.</p>
 <p>The goal is to transform scanned handwritten pages into structured, grammatically correct text and then into segmented audio files, making educational content more accessible.</p>
 </section>
-<section id="how-to-use" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use">How to Use</h2>
+<section id="how-to-use" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="how-to-use"><span class="header-section-number">1.2</span> How to Use</h2>
 <ol type="1">
 <li><strong>Upload Files</strong>: Upload your PDF of handwritten notes and your Google Cloud service account JSON key to your Colab environment. You can drag and drop them into the ‘Files’ tab on the left sidebar.</li>
 <li><strong>Get Gemini API Key</strong>: Obtain a Gemini API key from Google AI Studio (aistudio.google.com/build/api-key).</li>
@@ -417,8 +417,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="workflow-steps" class="level2">
-<h2 class="anchored" data-anchor-id="workflow-steps">Workflow Steps</h2>
+<section id="workflow-steps" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="workflow-steps"><span class="header-section-number">1.3</span> Workflow Steps</h2>
 <p>This notebook orchestrates a multi-step AI workflow:</p>
 <ol type="1">
 <li><strong>PDF to Images</strong>: Each page of the input PDF is converted into a high-resolution image.</li>
@@ -994,7 +994,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/RohanRanshinge\.github\.io\/blind-student-aid-ai\/");
+        var filterRegex = new RegExp("https:\/\/rohanranshinge\.github\.io\/blind-student-aid-ai\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

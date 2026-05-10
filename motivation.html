@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./motivation.html" aria-current="page"> 
-<span class="menu-text">The “Why”</span></a>
+<span class="menu-text">The Why</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./BlindStudentAid.html"> 
@@ -328,9 +328,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-inspiration-upsc-and-beyond" id="toc-the-inspiration-upsc-and-beyond" class="nav-link active" data-scroll-target="#the-inspiration-upsc-and-beyond">The Inspiration: UPSC and Beyond</a></li>
-  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The Problem</a></li>
-  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">The Solution</a></li>
+  <li><a href="#the-inspiration-upsc-and-beyond" id="toc-the-inspiration-upsc-and-beyond" class="nav-link active" data-scroll-target="#the-inspiration-upsc-and-beyond"><span class="header-section-number">1</span> The Inspiration: UPSC and Beyond</a></li>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem"><span class="header-section-number">2</span> The Problem</a></li>
+  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution"><span class="header-section-number">3</span> The Solution</a></li>
   </ul>
 </nav>
     </div>
@@ -358,21 +358,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="the-inspiration-upsc-and-beyond" class="level2">
-<h2 class="anchored" data-anchor-id="the-inspiration-upsc-and-beyond">The Inspiration: UPSC and Beyond</h2>
+<section id="the-inspiration-upsc-and-beyond" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="the-inspiration-upsc-and-beyond"><span class="header-section-number">1</span> The Inspiration: UPSC and Beyond</h2>
 <p>The Union Public Service Commission (UPSC) examination is one of the most rigorous academic pursuits in the world. For many, the journey involves thousands of pages of handwritten notes, quick sketches, and complex diagrams.</p>
 <p>For <strong>visually impaired students</strong>, this journey faces a unique bottleneck: <strong>accessibility</strong>. While printed books are often available in digital or braille formats, the invaluable, personalized “handwritten notes” shared in study groups or created in classrooms remain locked away in a visual format.</p>
 </section>
-<section id="the-problem" class="level2">
-<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
+<section id="the-problem" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="the-problem"><span class="header-section-number">2</span> The Problem</h2>
 <ol type="1">
 <li><strong>OCR Limitations:</strong> Standard OCR tools often struggle with the cursive or stylized nature of fast-paced handwriting.</li>
 <li><strong>Contextual Errors:</strong> Even when text is recognized, the “noise” of incorrect grammar or missing punctuation makes Text-to-Speech (TTS) output confusing and robotic.</li>
 <li><strong>Navigation:</strong> Listening to a single 2-hour audio file of a textbook is inefficient for targeted revision.</li>
 </ol>
 </section>
-<section id="the-solution" class="level2">
-<h2 class="anchored" data-anchor-id="the-solution">The Solution</h2>
+<section id="the-solution" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="the-solution"><span class="header-section-number">3</span> The Solution</h2>
 <p>This project was built to transform that workflow into a seamless experience:</p>
 <ul>
 <li><strong>Vision AI:</strong> Captures high-resolution detail from handwritten pages.</li>
@@ -526,7 +526,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/RohanRanshinge\.github\.io\/blind-student-aid-ai\/");
+        var filterRegex = new RegExp("https:\/\/rohanranshinge\.github\.io\/blind-student-aid-ai\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
