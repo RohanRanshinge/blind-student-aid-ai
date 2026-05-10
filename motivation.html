@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Project Overview – Blind Student Aid AI</title>
+<title>The Mission – Blind Student Aid AI</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -293,11 +293,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./motivation.html"> 
+    <a class="nav-link active" href="./motivation.html" aria-current="page"> 
 <span class="menu-text">The “Why”</span></a>
   </li>  
   <li class="nav-item">
@@ -328,14 +328,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#empowering-blind-students-handwritten-note-to-audio-converter" id="toc-empowering-blind-students-handwritten-note-to-audio-converter" class="nav-link active" data-scroll-target="#empowering-blind-students-handwritten-note-to-audio-converter">📝 Empowering Blind Students: Handwritten Note to Audio Converter</a>
-  <ul class="collapse">
-  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">🌟 Motivation</a></li>
-  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">🚀 Key Features</a></li>
-  <li><a href="#technical-stack" id="toc-technical-stack" class="nav-link" data-scroll-target="#technical-stack">🛠️ Technical Stack</a></li>
-  <li><a href="#how-to-use" id="toc-how-to-use" class="nav-link" data-scroll-target="#how-to-use">📋 How to Use</a></li>
-  <li><a href="#project-structure" id="toc-project-structure" class="nav-link" data-scroll-target="#project-structure">📂 Project Structure</a></li>
-  </ul></li>
+  <li><a href="#the-inspiration-upsc-and-beyond" id="toc-the-inspiration-upsc-and-beyond" class="nav-link active" data-scroll-target="#the-inspiration-upsc-and-beyond">The Inspiration: UPSC and Beyond</a></li>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The Problem</a></li>
+  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">The Solution</a></li>
   </ul>
 </nav>
     </div>
@@ -345,7 +340,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Project Overview</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">The Mission</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Empowering Aspirants Through Accessible Technology</p>
 </div>
 
 
@@ -362,67 +358,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="empowering-blind-students-handwritten-note-to-audio-converter" class="level1">
-<h1>📝 Empowering Blind Students: Handwritten Note to Audio Converter</h1>
-<p>An AI-powered pipeline designed to bridge the accessibility gap for visually impaired students by transforming handwritten study materials into structured, consistent, and high-quality audio podcasts.</p>
-<section id="motivation" class="level2">
-<h2 class="anchored" data-anchor-id="motivation">🌟 Motivation</h2>
-<p>In India, many bright and capable blind students—including those preparing for highly competitive exams like the <strong>UPSC</strong>—lack access to digitized study materials. They often rely on volunteers to manually dictate handwritten notes from other students.</p>
-<p>This process has a significant hurdle: every volunteer has a different accent, cadence, and speaking style. For a student trying to focus on complex subjects for hours, this inconsistency is a major cognitive drain.</p>
-<p><strong>This project was born to solve that.</strong> By using AI to digitize handwriting and synthesize it into a singular, high-definition voice, we provide students with a consistent, “podcast-like” learning experience. Now, a student can listen to 100 pages of notes and know that the voice, speed, and quality will remain identical throughout.</p>
+<section id="the-inspiration-upsc-and-beyond" class="level2">
+<h2 class="anchored" data-anchor-id="the-inspiration-upsc-and-beyond">The Inspiration: UPSC and Beyond</h2>
+<p>The Union Public Service Commission (UPSC) examination is one of the most rigorous academic pursuits in the world. For many, the journey involves thousands of pages of handwritten notes, quick sketches, and complex diagrams.</p>
+<p>For <strong>visually impaired students</strong>, this journey faces a unique bottleneck: <strong>accessibility</strong>. While printed books are often available in digital or braille formats, the invaluable, personalized “handwritten notes” shared in study groups or created in classrooms remain locked away in a visual format.</p>
 </section>
-<section id="key-features" class="level2">
-<h2 class="anchored" data-anchor-id="key-features">🚀 Key Features</h2>
-<ul>
-<li><strong>Handwriting to Digital:</strong> Uses Google Cloud Vision AI to extract text from dense, handwritten PDF scans.</li>
-<li><strong>Intelligent Refinement:</strong> Employs <strong>Gemini 1.5</strong> to fix OCR errors and structure raw notes into logical Markdown.</li>
-<li><strong>Consistent Audio Experience:</strong> Converts text into lifelike speech using <strong>Google Cloud TTS (Chirp3-HD)</strong>.</li>
-<li><strong>Podcast-Style Segmentation:</strong> Automatically splits long topics into manageable 12-minute audio “chapters” for easier navigation.</li>
-</ul>
-</section>
-<section id="technical-stack" class="level2">
-<h2 class="anchored" data-anchor-id="technical-stack">🛠️ Technical Stack</h2>
-<ul>
-<li><strong>Core:</strong> Python, Google Colab</li>
-<li><strong>Vision:</strong> Google Cloud Vision API (OCR)</li>
-<li><strong>Intelligence:</strong> Google Gemini API (Text Correction &amp; Structuring)</li>
-<li><strong>Speech:</strong> Google Cloud Text-to-Speech (Chirp3-HD - <code>en-IN</code> voice)</li>
-</ul>
-</section>
-<section id="how-to-use" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use">📋 How to Use</h2>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
 <ol type="1">
-<li><strong>Prerequisites:</strong>
-<ul>
-<li>A Google Cloud Project with Vision and Text-to-Speech APIs enabled.</li>
-<li>A Gemini API Key from <a href="https://aistudio.google.com/">Google AI Studio</a>.</li>
-<li>A service account JSON key for Google Cloud authentication.</li>
-</ul></li>
-<li><strong>Setup:</strong>
-<ul>
-<li>Upload your handwritten notes (PDF) to the environment.</li>
-<li>Store your <code>GEMINI_API_KEY</code> in your environment secrets.</li>
-<li>Update the <code>PDF_FILE_PATH</code> and <code>GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY_PATH</code> in the configuration cell.</li>
-</ul></li>
-<li><strong>Execution:</strong>
-<ul>
-<li>Run all cells in the <code>BlindStudentAid.ipynb</code> notebook.</li>
-<li>The workflow will output a <code>cleaned_text.txt</code> file and a folder of <code>.mp3</code> audio segments.</li>
-</ul></li>
+<li><strong>OCR Limitations:</strong> Standard OCR tools often struggle with the cursive or stylized nature of fast-paced handwriting.</li>
+<li><strong>Contextual Errors:</strong> Even when text is recognized, the “noise” of incorrect grammar or missing punctuation makes Text-to-Speech (TTS) output confusing and robotic.</li>
+<li><strong>Navigation:</strong> Listening to a single 2-hour audio file of a textbook is inefficient for targeted revision.</li>
 </ol>
 </section>
-<section id="project-structure" class="level2">
-<h2 class="anchored" data-anchor-id="project-structure">📂 Project Structure</h2>
-<pre class="text"><code>├── BlindStudentAid.ipynb   # Main execution notebook
-├── audio_segments/         # Generated MP3 files (output)
-├── extracted_images/       # Intermediate page scans for OCR
-└── cleaned_text.txt        # The AI-corrected transcript</code></pre>
-<p><em>Created to ensure that a student’s ambition is never limited by their access to knowledge.</em></p>
+<section id="the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution">The Solution</h2>
+<p>This project was built to transform that workflow into a seamless experience:</p>
+<ul>
+<li><strong>Vision AI:</strong> Captures high-resolution detail from handwritten pages.</li>
+<li><strong>Gemini Pro:</strong> Acts as a “bridge” to correct OCR hallucinations and structure the text into logical Markdown.</li>
+<li><strong>Segmented Audio:</strong> Instead of one long file, it generates manageable chapters using high-quality <strong>Chirp3-HD</strong> voices, making it feel like a professional audiobook.</li>
+</ul>
+<blockquote class="blockquote">
+<p>“The goal isn’t just to read text, but to provide a tool that respects the effort a student puts into their notes by making them accessible anywhere, anytime.”</p>
+</blockquote>
 
 
 <!-- -->
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -890,63 +853,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Project Overview"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># 📝 Empowering Blind Students: Handwritten Note to Audio Converter</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>An AI-powered pipeline designed to bridge the accessibility gap for visually impaired students by transforming handwritten study materials into structured, consistent, and high-quality audio podcasts.</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## 🌟 Motivation</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>In India, many bright and capable blind students—including those preparing for highly competitive exams like the **UPSC**—lack access to digitized study materials. They often rely on volunteers to manually dictate handwritten notes from other students. </span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>This process has a significant hurdle: every volunteer has a different accent, cadence, and speaking style. For a student trying to focus on complex subjects for hours, this inconsistency is a major cognitive drain. </span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>**This project was born to solve that.** By using AI to digitize handwriting and synthesize it into a singular, high-definition voice, we provide students with a consistent, "podcast-like" learning experience. Now, a student can listen to 100 pages of notes and know that the voice, speed, and quality will remain identical throughout.</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## 🚀 Key Features</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Handwriting to Digital:** Uses Google Cloud Vision AI to extract text from dense, handwritten PDF scans.</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Intelligent Refinement:** Employs **Gemini 1.5** to fix OCR errors and structure raw notes into logical Markdown.</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Consistent Audio Experience:** Converts text into lifelike speech using **Google Cloud TTS (Chirp3-HD)**.</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Podcast-Style Segmentation:** Automatically splits long topics into manageable 12-minute audio "chapters" for easier navigation.</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## 🛠️ Technical Stack</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Core:** Python, Google Colab</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Vision:** Google Cloud Vision API (OCR)</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Intelligence:** Google Gemini API (Text Correction &amp; Structuring)</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Speech:** Google Cloud Text-to-Speech (Chirp3-HD - <span class="in">`en-IN`</span> voice)</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="fu">## 📋 How to Use</span></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Prerequisites:**</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>A Google Cloud Project with Vision and Text-to-Speech APIs enabled.</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>A Gemini API Key from <span class="co">[</span><span class="ot">Google AI Studio</span><span class="co">](https://aistudio.google.com/)</span>.</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>A service account JSON key for Google Cloud authentication.</span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Setup:**</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Upload your handwritten notes (PDF) to the environment.</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Store your <span class="in">`GEMINI_API_KEY`</span> in your environment secrets.</span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Update the <span class="in">`PDF_FILE_PATH`</span> and <span class="in">`GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY_PATH`</span> in the configuration cell.</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Execution:**</span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>Run all cells in the <span class="in">`BlindStudentAid.ipynb`</span> notebook.</span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>The workflow will output a <span class="in">`cleaned_text.txt`</span> file and a folder of <span class="in">`.mp3`</span> audio segments.</span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="fu">## 📂 Project Structure</span></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="in">├── BlindStudentAid.ipynb   # Main execution notebook</span></span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="in">├── audio_segments/         # Generated MP3 files (output)</span></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a><span class="in">├── extracted_images/       # Intermediate page scans for OCR</span></span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="in">└── cleaned_text.txt        # The AI-corrected transcript</span></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>*Created to ensure that a student's ambition is never limited by their access to knowledge.*</span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "The Mission"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Empowering Aspirants Through Accessible Technology"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Inspiration: UPSC and Beyond</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>The Union Public Service Commission (UPSC) examination is one of the most rigorous academic pursuits in the world. For many, the journey involves thousands of pages of handwritten notes, quick sketches, and complex diagrams.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>For **visually impaired students**, this journey faces a unique bottleneck: **accessibility**. While printed books are often available in digital or braille formats, the invaluable, personalized "handwritten notes" shared in study groups or created in classrooms remain locked away in a visual format.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Problem</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**OCR Limitations:** Standard OCR tools often struggle with the cursive or stylized nature of fast-paced handwriting.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Contextual Errors:** Even when text is recognized, the "noise" of incorrect grammar or missing punctuation makes Text-to-Speech (TTS) output confusing and robotic.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Navigation:** Listening to a single 2-hour audio file of a textbook is inefficient for targeted revision.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Solution</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>This project was built to transform that workflow into a seamless experience:</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Vision AI:** Captures high-resolution detail from handwritten pages.</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Gemini Pro:** Acts as a "bridge" to correct OCR hallucinations and structure the text into logical Markdown.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Segmented Audio:** Instead of one long file, it generates manageable chapters using high-quality **Chirp3-HD** voices, making it feel like a professional audiobook.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "The goal isn't just to read text, but to provide a tool that respects the effort a student puts into their notes by making them accessible anywhere, anytime."</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
