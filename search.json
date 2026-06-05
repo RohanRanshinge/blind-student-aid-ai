@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Project Overview",
+    "section": "",
+    "text": "Welcome to the Blind Student Aid AI project. This tool leverages Google Cloud’s Vision AI and Gemini Pro to convert handwritten educational materials into structured, natural-sounding audio."
+  },
+  {
+    "objectID": "index.html#motivation",
+    "href": "index.html#motivation",
+    "title": "Project Overview",
+    "section": "1.1 🌟 Motivation",
+    "text": "1.1 🌟 Motivation\nIn India, many bright and capable blind students—including those preparing for highly competitive exams like the UPSC—lack access to digitized study materials. They often rely on volunteers to manually dictate handwritten notes from other students.\nThis process has a significant hurdle: every volunteer has a different accent, cadence, and speaking style. For a student trying to focus on complex subjects for hours, this inconsistency is a major cognitive drain.\nThis project was born to solve that. By using AI to digitize handwriting and synthesize it into a singular, high-definition voice, we provide students with a consistent, “podcast-like” learning experience. Now, a student can listen to 100 pages of notes and know that the voice, speed, and quality will remain identical throughout."
+  },
+  {
+    "objectID": "index.html#key-features",
+    "href": "index.html#key-features",
+    "title": "Project Overview",
+    "section": "1.2 🚀 Key Features",
+    "text": "1.2 🚀 Key Features\n\nHandwriting to Digital: Uses Google Cloud Vision AI to extract text from dense, handwritten PDF scans.\nIntelligent Refinement: Employs Gemini 1.5 to fix OCR errors and structure raw notes into logical Markdown.\nConsistent Audio Experience: Converts text into lifelike speech using Google Cloud TTS (Chirp3-HD).\nPodcast-Style Segmentation: Automatically splits long topics into manageable 12-minute audio “chapters” for easier navigation."
+  },
+  {
+    "objectID": "index.html#technical-stack",
+    "href": "index.html#technical-stack",
+    "title": "Project Overview",
+    "section": "1.3 🛠️ Technical Stack",
+    "text": "1.3 🛠️ Technical Stack\n\nCore: Python, Google Colab\nVision: Google Cloud Vision API (OCR)\nIntelligence: Google Gemini API (Text Correction & Structuring)\nSpeech: Google Cloud Text-to-Speech (Chirp3-HD - en-IN voice)"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Project Overview",
+    "section": "1.4 📋 How to Use",
+    "text": "1.4 📋 How to Use\n\nPrerequisites:\n\nA Google Cloud Project with Vision and Text-to-Speech APIs enabled.\nA Gemini API Key from Google AI Studio.\nA service account JSON key for Google Cloud authentication.\n\nSetup:\n\nUpload your handwritten notes (PDF) to the environment.\nStore your GEMINI_API_KEY in your environment secrets.\nUpdate the PDF_FILE_PATH and GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY_PATH in the configuration cell.\n\nExecution:\n\nRun all cells in the BlindStudentAid.ipynb notebook.\nThe workflow will output a cleaned_text.txt file and a folder of .mp3 audio segments."
+  },
+  {
+    "objectID": "index.html#project-structure",
+    "href": "index.html#project-structure",
+    "title": "Project Overview",
+    "section": "1.5 📂 Project Structure",
+    "text": "1.5 📂 Project Structure\n├── BlindStudentAid.ipynb   # Main execution notebook\n├── audio_segments/         # Generated MP3 files (output)\n├── extracted_images/       # Intermediate page scans for OCR\n└── cleaned_text.txt        # The AI-corrected transcript\nCreated to ensure that a student’s ambition is never limited by their access to knowledge."
+  },
+  {
     "objectID": "BlindStudentAid.html",
     "href": "BlindStudentAid.html",
     "title": "",
@@ -54,47 +96,5 @@
     "title": "The Mission",
     "section": "3 The Solution",
     "text": "3 The Solution\nThis project was built to transform that workflow into a seamless experience:\n\nVision AI: Captures high-resolution detail from handwritten pages.\nGemini Pro: Acts as a “bridge” to correct OCR hallucinations and structure the text into logical Markdown.\nSegmented Audio: Instead of one long file, it generates manageable chapters using high-quality Chirp3-HD voices, making it feel like a professional audiobook.\n\n\n“The goal isn’t just to read text, but to provide a tool that respects the effort a student puts into their notes by making them accessible anywhere, anytime.”"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Project Overview",
-    "section": "",
-    "text": "Welcome to the Blind Student Aid AI project. This tool leverages Google Cloud’s Vision AI and Gemini Pro to convert handwritten educational materials into structured, natural-sounding audio."
-  },
-  {
-    "objectID": "index.html#motivation",
-    "href": "index.html#motivation",
-    "title": "Project Overview",
-    "section": "1.1 🌟 Motivation",
-    "text": "1.1 🌟 Motivation\nIn India, many bright and capable blind students—including those preparing for highly competitive exams like the UPSC—lack access to digitized study materials. They often rely on volunteers to manually dictate handwritten notes from other students.\nThis process has a significant hurdle: every volunteer has a different accent, cadence, and speaking style. For a student trying to focus on complex subjects for hours, this inconsistency is a major cognitive drain.\nThis project was born to solve that. By using AI to digitize handwriting and synthesize it into a singular, high-definition voice, we provide students with a consistent, “podcast-like” learning experience. Now, a student can listen to 100 pages of notes and know that the voice, speed, and quality will remain identical throughout."
-  },
-  {
-    "objectID": "index.html#key-features",
-    "href": "index.html#key-features",
-    "title": "Project Overview",
-    "section": "1.2 🚀 Key Features",
-    "text": "1.2 🚀 Key Features\n\nHandwriting to Digital: Uses Google Cloud Vision AI to extract text from dense, handwritten PDF scans.\nIntelligent Refinement: Employs Gemini 1.5 to fix OCR errors and structure raw notes into logical Markdown.\nConsistent Audio Experience: Converts text into lifelike speech using Google Cloud TTS (Chirp3-HD).\nPodcast-Style Segmentation: Automatically splits long topics into manageable 12-minute audio “chapters” for easier navigation."
-  },
-  {
-    "objectID": "index.html#technical-stack",
-    "href": "index.html#technical-stack",
-    "title": "Project Overview",
-    "section": "1.3 🛠️ Technical Stack",
-    "text": "1.3 🛠️ Technical Stack\n\nCore: Python, Google Colab\nVision: Google Cloud Vision API (OCR)\nIntelligence: Google Gemini API (Text Correction & Structuring)\nSpeech: Google Cloud Text-to-Speech (Chirp3-HD - en-IN voice)"
-  },
-  {
-    "objectID": "index.html#how-to-use",
-    "href": "index.html#how-to-use",
-    "title": "Project Overview",
-    "section": "1.4 📋 How to Use",
-    "text": "1.4 📋 How to Use\n\nPrerequisites:\n\nA Google Cloud Project with Vision and Text-to-Speech APIs enabled.\nA Gemini API Key from Google AI Studio.\nA service account JSON key for Google Cloud authentication.\n\nSetup:\n\nUpload your handwritten notes (PDF) to the environment.\nStore your GEMINI_API_KEY in your environment secrets.\nUpdate the PDF_FILE_PATH and GOOGLE_CLOUD_SERVICE_ACCOUNT_KEY_PATH in the configuration cell.\n\nExecution:\n\nRun all cells in the BlindStudentAid.ipynb notebook.\nThe workflow will output a cleaned_text.txt file and a folder of .mp3 audio segments."
-  },
-  {
-    "objectID": "index.html#project-structure",
-    "href": "index.html#project-structure",
-    "title": "Project Overview",
-    "section": "1.5 📂 Project Structure",
-    "text": "1.5 📂 Project Structure\n├── BlindStudentAid.ipynb   # Main execution notebook\n├── audio_segments/         # Generated MP3 files (output)\n├── extracted_images/       # Intermediate page scans for OCR\n└── cleaned_text.txt        # The AI-corrected transcript\nCreated to ensure that a student’s ambition is never limited by their access to knowledge."
   }
 ]
