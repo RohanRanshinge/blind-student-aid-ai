@@ -1,8 +1,12 @@
-from flask import Flask, request, jsonify
+import os
+from flask import Flask
 
 app = Flask(__name__)
 
-VERIFY_TOKEN = "blindstudentaid_secret"
+# Load keys from environment variables set on your server/hosting platform
+VERIFY_TOKEN = os.environ.get("VERIFY_TOKEN")
+WHATSAPP_TOKEN = os.environ.get("WHATSAPP_TOKEN")
+PHONE_NUMBER_ID = os.environ.get("PHONE_NUMBER_ID")
 
 @app.route('/webhook', methods=['GET', 'POST'])
 def webhook():
